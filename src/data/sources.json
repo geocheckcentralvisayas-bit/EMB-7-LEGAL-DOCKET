@@ -1,0 +1,308 @@
+{
+  "sources": [
+    {
+      "year": "2021",
+      "label": "2021 Legal Database",
+      "sheetId": "1AsKv2Slbzi-oq7aaJgjApK3dbKVWjOU1xkPjQcFTVuk",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1AsKv2Slbzi-oq7aaJgjApK3dbKVWjOU1xkPjQcFTVuk/edit?gid=1382762504#gid=1382762504",
+      "dataThrough": "2021-12-31",
+      "live": false,
+      "coverage": [
+        "Master register (NOV 2021): case number, IIS reference, document date, respondent, address, contact person, violation flags, case handler, status and remarks.",
+        "No email, contact number, province, city/municipality, barangay, or document-type columns in the master register; document type is taken from the NOV type column.",
+        "Province derived from address; Negros Oriental and Siquijor cases excluded dashboard-wide.",
+        "Rows are retained even when the docs record column is blank.",
+        "No PAB NOV, orders, payments, complaints, LBC, or DPWH tabs in this workbook."
+      ],
+      "tabs": [
+        {
+          "key": "master",
+          "title": "NOV 2021",
+          "gid": "1382762504",
+          "range": "A1:Z1200",
+          "hasHeader": true
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "label": "2022 Legal Database",
+      "sheetId": "10gYgAjFAlj7GtN2N_h1BjDoImSWH4I1Ad2Y5c9pFxY8",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/10gYgAjFAlj7GtN2N_h1BjDoImSWH4I1Ad2Y5c9pFxY8/edit?gid=1760293509#gid=1760293509",
+      "dataThrough": "2022-12-31",
+      "live": false,
+      "coverage": [
+        "Master register (NOV 2022): case number, IIS reference, document date, respondent, address, representative, violation flags, case handler, status and remarks.",
+        "No email, contact number, province, city/municipality, barangay, or document-type columns in the master register.",
+        "Province derived from address; Negros Oriental and Siquijor cases excluded dashboard-wide.",
+        "Rows are retained even when the docs record column is blank.",
+        "No PAB NOV, orders, payments, complaints, LBC, or DPWH tabs in this workbook."
+      ],
+      "tabs": [
+        {
+          "key": "master",
+          "title": "NOV 2022",
+          "gid": "1760293509",
+          "range": "A1:AZ1200",
+          "hasHeader": true
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "label": "2023 Legal Database",
+      "sheetId": "10fosauYZ0TaDLp9EFyouA26bWV7xHAw2GkIyjmRdXnE",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/10fosauYZ0TaDLp9EFyouA26bWV7xHAw2GkIyjmRdXnE/edit?gid=0#gid=0",
+      "dataThrough": "2023-12-31",
+      "live": false,
+      "coverage": [
+        "Master register (NOV 2023): case number, IIS reference, document date, respondent, address, proponent, violation flags, case handler.",
+        "No email, contact number, province, city/municipality, barangay, or document-type columns in the master register.",
+        "Province derived from address; Negros Oriental and Siquijor cases excluded dashboard-wide.",
+        "PAB notices (PAB NOV 2023) include penalty payment data embedded in the tab.",
+        "Orders/Resolutions 2023 tab split into regular orders and PAB orders.",
+        "ERF 2023 payments include province column.",
+        "Complaints tab (2023 only) with respondent address and location.",
+        "No LBC or DPWH tabs in this workbook."
+      ],
+      "tabs": [
+        {
+          "key": "master",
+          "title": "NOV 2023",
+          "gid": "0",
+          "range": "A1:AC1200",
+          "hasHeader": true
+        },
+        {
+          "key": "pabNov",
+          "title": "PAB NOV 2023",
+          "gid": "778300904",
+          "range": "A1:AD1100",
+          "hasHeader": true
+        },
+        {
+          "key": "orders",
+          "title": "ORDERS/RESO 2023",
+          "gid": "683910291",
+          "range": "A1:N600",
+          "hasHeader": true
+        },
+        {
+          "key": "erf",
+          "title": "ERF 2023",
+          "gid": "692782229",
+          "range": "A1:P300",
+          "hasHeader": true
+        },
+        {
+          "key": "complaints",
+          "title": "COMPLAINTS",
+          "gid": "1938765861",
+          "range": "A1:Z150",
+          "hasHeader": true
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "label": "2024 Legal Database",
+      "sheetId": "10fosauYZ0TaDLp9EFyouA26bWV7xHAw2GkIyjmRdXnE",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/10fosauYZ0TaDLp9EFyouA26bWV7xHAw2GkIyjmRdXnE/edit?gid=0#gid=0",
+      "dataThrough": "2024-12-31",
+      "live": false,
+      "coverage": [
+        "Master register (NOV 2024): case number, IIS reference, document date, respondent, address, proponent, violation flags, case handler, remarks.",
+        "No email, contact number, city/municipality, barangay, or document-type columns.",
+        "Province derived from address; Negros Oriental and Siquijor cases excluded dashboard-wide.",
+        "PAB 2024 notices; separate PAB PENALTY 2024 tab for penalties.",
+        "Orders/Resolutions 2024 tab split into regular orders and PAB orders.",
+        "ERF 2024 payments include province column.",
+        "DPWH Compliance 2024 (superseded by 2025 tab).",
+        "No LBC or Complaints tabs in this year."
+      ],
+      "tabs": [
+        {
+          "key": "master",
+          "title": "NOV 2024",
+          "gid": "828553087",
+          "range": "A1:AC1200",
+          "hasHeader": false
+        },
+        {
+          "key": "pabNov",
+          "title": "PAB 2024",
+          "gid": "1409143841",
+          "range": "A1:AE1100",
+          "hasHeader": false
+        },
+        {
+          "key": "orders",
+          "title": "ORDERS/RESO 2024",
+          "gid": "1683923962",
+          "range": "A1:P900",
+          "hasHeader": true
+        },
+        {
+          "key": "erf",
+          "title": "ERF 2024",
+          "gid": "317148920",
+          "range": "A1:P400",
+          "hasHeader": true
+        },
+        {
+          "key": "pabPenalty",
+          "title": "PAB PENALTY 2024",
+          "gid": "1380911054",
+          "range": "A1:J300",
+          "hasHeader": true
+        },
+        {
+          "key": "dpwh",
+          "title": "DPWH COMPLIANCE",
+          "gid": "109939199",
+          "range": "A1:E50",
+          "hasHeader": true
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "label": "2025 Legal Database",
+      "sheetId": "1IPwfor6gFOXU7DciJAOaJxfQ0U2novyZgAB_b29gVEM",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1IPwfor6gFOXU7DciJAOaJxfQ0U2novyZgAB_b29gVEM/edit?gid=0#gid=0",
+      "coverage": [
+        "Master register: case number, IIS reference, document date, respondent, address, proponent, violation flags, case handler.",
+        "No email, contact number, province, city/municipality, barangay, or document-type columns in the master register.",
+        "Province is derived only when Cebu, Bohol, Negros Oriental, or Siquijor is explicit in the address; city/municipality stays blank.",
+        "Includes Document Tracking (LBC) and DPWH Compliance tabs, which are not present in the 2026 workbook.",
+        "Negros Oriental and Siquijor cases excluded dashboard-wide."
+      ],
+      "tabs": [
+        {
+          "key": "master",
+          "title": "EMB CASES",
+          "gid": "0",
+          "range": "A1:X2000"
+        },
+        {
+          "key": "pabNov",
+          "title": "EMB PAB CASES",
+          "gid": "1476702120",
+          "range": "A1:M1000"
+        },
+        {
+          "key": "orders",
+          "title": "ORDERS/RESOLUTIONS - PD 1586&RA6969",
+          "gid": "226034560",
+          "range": "A1:J1000"
+        },
+        {
+          "key": "pabOrders",
+          "title": "PAB ORDERS/RESOLUTIONS",
+          "gid": "771727124",
+          "range": "A1:J1000"
+        },
+        {
+          "key": "erf",
+          "title": "ERF - PD 1586",
+          "gid": "826698141",
+          "range": "A1:H1000"
+        },
+        {
+          "key": "ra6969",
+          "title": "RA 6969 PENALTY",
+          "gid": "291119371",
+          "range": "A1:H200"
+        },
+        {
+          "key": "pabPenalty",
+          "title": "PAB PENALTY",
+          "gid": "1795741541",
+          "range": "A1:H500"
+        },
+        {
+          "key": "lbc",
+          "title": "LBC TRACK",
+          "gid": "407681092",
+          "range": "A1:N1000"
+        },
+        {
+          "key": "dpwh",
+          "title": "DPWH COMPLIANCE (CDO)",
+          "gid": "1176870912",
+          "range": "A1:E50",
+          "hasHeader": false
+        }
+      ],
+      "dataThrough": "2025-12-31"
+    },
+    {
+      "year": "2026",
+      "label": "2026 Legal Database",
+      "sheetId": "1xnOstH2r6hQMpC7Ae7fZK9ljhTH1yUOMqOeecgDmP68",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1xnOstH2r6hQMpC7Ae7fZK9ljhTH1yUOMqOeecgDmP68/edit?gid=0#gid=0",
+      "coverage": [
+        "Master register includes province, city/municipality, barangay, document type, case handler, and notes.",
+        "Includes Complaints and NO NOV - TC ONLY tabs.",
+        "Does not include Document Tracking (LBC) or DPWH Compliance.",
+        "Negros Oriental and Siquijor cases excluded dashboard-wide."
+      ],
+      "tabs": [
+        {
+          "key": "master",
+          "title": "2026 Legal Database",
+          "gid": "0",
+          "range": "A1:X600"
+        },
+        {
+          "key": "pabNov",
+          "title": "EMB 7 PAB NOV",
+          "sheet": "EMB 7 PAB NOV",
+          "range": "A1:T600"
+        },
+        {
+          "key": "orders",
+          "title": "ORDERS/RESOLUTIONS - PD 1586&RA6969",
+          "sheet": "ORDERS/RESOLUTIONS - PD 1586&RA6969",
+          "range": "A1:N300"
+        },
+        {
+          "key": "pabOrders",
+          "title": "PAB ORDERS/RESOLUTIONS",
+          "sheet": "PAB ORDERS/RESOLUTIONS",
+          "range": "A1:M200"
+        },
+        {
+          "key": "erf",
+          "title": "ERF - PD 1586",
+          "sheet": "ERF - PD 1586",
+          "range": "A1:G400"
+        },
+        {
+          "key": "pabPenalty",
+          "title": "PAB PENALTY",
+          "sheet": " PAB PENALTY",
+          "range": "A1:H300"
+        },
+        {
+          "key": "ra6969",
+          "title": "RA 6969 PENALTY",
+          "sheet": " RA 6969 PENALTY",
+          "range": "A1:H50"
+        },
+        {
+          "key": "complaints",
+          "title": "COMPLAINTS",
+          "sheet": "COMPLAINTS",
+          "range": "A1:G120"
+        },
+        {
+          "key": "noNovTc",
+          "title": "NO NOV - TC ONLY",
+          "sheet": "NO NOV - TC ONLY",
+          "range": "A1:E10"
+        }
+      ]
+    }
+  ]
+}

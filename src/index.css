@@ -1,0 +1,298 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen font-sans text-slate-800 antialiased;
+    background-color: #ecf7f1;
+    background-image:
+      radial-gradient(circle at 8% 4%, rgba(74, 222, 128, 0.24), transparent 28%),
+      radial-gradient(circle at 94% 10%, rgba(45, 212, 191, 0.2), transparent 32%),
+      radial-gradient(circle at 76% 92%, rgba(250, 204, 21, 0.14), transparent 30%),
+      radial-gradient(circle at 16% 88%, rgba(14, 165, 233, 0.1), transparent 30%),
+      linear-gradient(135deg, #f6fbf8 0%, #ecf8f2 42%, #eef8f5 68%, #f8f4e8 100%);
+    background-attachment: fixed;
+  }
+
+  #root {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='360' viewBox='0 0 360 360'%3E%3Cg fill='none' stroke='%23166534' stroke-opacity='.14' stroke-width='1'%3E%3Cpath d='M-40 70C40 10 120 130 200 70s140-60 220 0'/%3E%3Cpath d='M-40 110C40 50 120 170 200 110s140-60 220 0'/%3E%3Cpath d='M-40 150C40 90 120 210 200 150s140-60 220 0'/%3E%3Cpath d='M-40 250C40 190 120 310 200 250s140-60 220 0'/%3E%3Cpath d='M-40 290C40 230 120 350 200 290s140-60 220 0'/%3E%3Cpath d='M-40 330C40 270 120 390 200 330s140-60 220 0'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 420px 420px;
+    opacity: 0.28;
+  }
+
+  ::selection {
+    @apply bg-brand-200 text-navy-950;
+  }
+
+  button,
+  a,
+  select,
+  input {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-white/70 shadow-glass backdrop-blur-xl;
+    background-color: rgba(255, 255, 255, 0.45);
+    background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.78) 0%,
+      rgba(255, 255, 255, 0.52) 48%,
+      rgba(236, 253, 245, 0.46) 100%
+    );
+  }
+
+  .card-pad {
+    @apply p-5 sm:p-6;
+  }
+
+  .glass-bar {
+    @apply rounded-2xl border border-white/70 shadow-glass backdrop-blur-xl;
+    background-color: rgba(255, 255, 255, 0.42);
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.7) 0%,
+      rgba(255, 255, 255, 0.4) 55%,
+      rgba(220, 252, 231, 0.34) 100%
+    );
+  }
+
+  .glass-chip {
+    @apply rounded-xl border border-white/70 bg-white/45 shadow-sm backdrop-blur-md;
+  }
+
+  .glass-inset {
+    @apply rounded-xl border border-white/60 bg-white/35 backdrop-blur-sm;
+  }
+
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.14em] text-emerald-900/55;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-white/70 bg-white/55 px-3 py-2 text-sm text-slate-800 shadow-sm outline-none backdrop-blur-md transition placeholder:text-slate-400 focus:border-brand-400 focus:bg-white/80 focus:ring-2 focus:ring-brand-500/20;
+  }
+
+  .select {
+    @apply input appearance-none bg-[length:16px_16px] bg-[right_0.7rem_center] bg-no-repeat pr-9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23166534' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-3.5 py-2 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/40 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-to-r from-brand-700 via-brand-600 to-emerald-600 text-white shadow-lg shadow-brand-900/20 hover:from-brand-600 hover:to-emerald-500;
+  }
+
+  .btn-secondary {
+    @apply btn border border-white/70 bg-white/50 text-navy-800 shadow-sm backdrop-blur-md hover:border-white hover:bg-white/80;
+  }
+
+  .btn-ghost {
+    @apply btn text-navy-700 hover:bg-white/55;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-semibold leading-none backdrop-blur-sm;
+  }
+
+  .table-wrap {
+    @apply overflow-x-auto;
+  }
+
+  .data-table {
+    @apply w-full border-collapse text-left text-sm;
+  }
+
+  .data-table thead th {
+    @apply sticky top-0 z-10 whitespace-nowrap border-b border-emerald-900/10 bg-emerald-50/70 px-2.5 py-3 text-[11px] font-semibold uppercase tracking-wider text-emerald-900/60 backdrop-blur-xl;
+  }
+
+  .data-table tbody td {
+    @apply border-b border-emerald-900/5 px-2.5 py-3 align-top text-slate-700;
+  }
+
+  .data-table tbody tr {
+    @apply transition-colors hover:bg-emerald-50/45;
+  }
+
+  .data-table tbody tr:last-child td {
+    @apply border-b-0;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(22, 101, 52, 0.28) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-emerald-700/25;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .denr-logo-float {
+    animation: denr-logo-float 5.2s ease-in-out infinite;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  .denr-logo-halo {
+    animation: denr-logo-halo 5.2s ease-in-out infinite;
+    transform-origin: center;
+  }
+
+  .denr-logo-sheen {
+    position: absolute;
+    top: -25%;
+    bottom: -25%;
+    left: -45%;
+    width: 38%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.72), transparent);
+    transform: rotate(18deg) translateX(-150%);
+    animation: denr-logo-sheen 6.4s ease-in-out infinite;
+    pointer-events: none;
+  }
+}
+
+@keyframes denr-logo-float {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-1.5px) scale(1.035);
+  }
+}
+
+@keyframes denr-logo-halo {
+  0%,
+  100% {
+    opacity: 0.42;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes denr-logo-sheen {
+  0%,
+  58% {
+    opacity: 0;
+    transform: rotate(18deg) translateX(-150%);
+  }
+  66% {
+    opacity: 0.55;
+  }
+  82%,
+  100% {
+    opacity: 0;
+    transform: rotate(18deg) translateX(330%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .denr-logo-float,
+  .denr-logo-halo {
+    animation: none;
+  }
+
+  .denr-logo-sheen {
+    display: none;
+  }
+}
+
+@media print {
+  @page {
+    margin: 14mm;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  body::before {
+    display: none !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  .card,
+  .glass-bar,
+  .glass-chip,
+  .glass-inset {
+    border-color: #d7e3dc !important;
+    background: #fff !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+  }
+
+  .card {
+    break-inside: avoid;
+  }
+
+  .table-wrap {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .data-table thead th {
+    position: static;
+    background: #f8faf9 !important;
+  }
+}
